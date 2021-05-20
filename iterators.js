@@ -55,9 +55,8 @@ const hottestDays = function (temperatures, threshhold) {
  *******************************************/
 const logHottestDays = function (temperatures, threshhold) {
   let x = hottestDays(temperatures, threshhold);
-  x.forEach((element) => {
-    console.log((element - 32) * (5 / 9));
-  });
+  let y = toCelsius(x);
+  logger(y);
 };
 
 // const logHottestDays = function (temperatures, threshhold) {
